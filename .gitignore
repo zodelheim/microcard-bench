@@ -1,0 +1,5 @@
+data/emigrid/carp/*
+data/emigrid/*.msh
+*.pyc
+external
+.vscode
