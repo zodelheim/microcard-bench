@@ -47,10 +47,10 @@ if __name__ == "__main__":
     arr = np.empty((elm.shape[0], 6), dtype=object)
     arr[:, 0] = "Tt"
     arr[:, 1:5] = elm[:, 0:4]
-    arr[:, 5] = tag - 1
+    arr[:, 5] = tag
     print(arr[:, 5])
-    extra = np.arange(1, ntags, step=2)
-    intra = np.arange(0, ntags, step=2)
+    extra = np.arange(0, ntags + 1, step=2)
+    intra = np.arange(1, ntags + 1, step=2)
 
     lon = np.zeros((arr.shape[0], 3))
     lon[:, 0] = 1
